@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Biodata Naiyla</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HALAMAN AWAL -->
+<section id="welcome">
+
+    <div class="welcome-box">
+        <h1>BIODATA</h1>
+        <h2>NAIYLA AULIAN PUTRI</h2>
+
+        <p>Welcome To My Profile 🌿</p>
+
+        <a href="#home" class="btn">
+            Masuk
+        </a>
+    </div>
+
+</section>
+
+<!-- HALAMAN UTAMA -->
+<section id="home">
+
+    <div class="hero">
+
+        <img src="foto.jpg" alt="Foto Profil">
+
+        <h1>Naiyla Aulian Putri</h1>
+
+        <p>
+            Pelajar SMK yang memiliki minat
+            dalam teknologi dan desain.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- BIODATA -->
+<section class="card">
+
+    <h2>Tentang Saya</h2>
+
+    <p><b>Nama Lengkap :</b> Naiyla Aulian Putri</p>
+    <p><b>Tempat, Tanggal Lahir :</b> ...</p>
+    <p><b>Alamat :</b> ...</p>
+    <p><b>Status :</b> Pelajar</p>
+
+</section>
+
+<!-- PENDIDIKAN -->
+<section class="card">
+
+    <h2>Pendidikan</h2>
+
+    <div class="timeline">
+
+        <div class="item">
+            <h3>SMKN ...</h3>
+            <span>2025 - Sekarang</span>
+        </div>
+
+        <div class="item">
+            <h3>MTS ...</h3>
+            <span>2022 - 2025</span>
+        </div>
+
+        <div class="item">
+            <h3>SD ...</h3>
+            <span>2016 - 2022</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- HOBI -->
+<section class="card">
+
+    <h2>Hobi & Minat</h2>
+
+    <div class="hobi">
+
+        <div class="box">🎵 Musik</div>
+        <div class="box">📖 Membaca</div>
+        <div class="box">🎨 Desain</div>
+        <div class="box">💻 Teknologi</div>
+
+    </div>
+
+</section>
+
+<!-- KEAHLIAN -->
+<section class="card">
+
+    <h2>Keahlian</h2>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="bar"><span style="width:90%"></span></div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="bar"><span style="width:80%"></span></div>
+    </div>
+
+    <div class="skill">
+        <p>Canva</p>
+        <div class="bar"><span style="width:95%"></span></div>
+    </div>
+
+</section>
+
+<!-- QUOTE -->
+<section class="quote">
+
+    <p>
+        "Progress lebih penting daripada kesempurnaan."
+    </p>
+
+</section>
+
+<!-- SOSMED -->
+<section class="card">
+
+    <h2>Kontak</h2>
+
+    <div class="sosmed">
+
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Email</a>
+
+    </div>
+
+</section>
+
+<footer>
+    Made with 💚 by Naiyla
+</footer>
+
+</body>
+</html>
+[17/08/2026 21:47] Naiy: html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#F8F6F0;
+    color:#333;
+}
+
+/* WELCOME */
+
+#welcome{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.welcome-box h1{
+    color:#556B2F;
+}
+
+.welcome-box h2{
+    color:#556B2F;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 30px;
+    background:#556B2F;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#C9A227;
+}
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+
+    border:5px solid #C9A227;
+
+    transition:0.3s;
+}
+
+.hero img:hover{
+    transform:scale(1.08);
+}
+
+.hero h1{
+    color:#556B2F;
+}
+
+/* CARD */
+
+.card{
+    width:85%;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card h2{
+    color:#556B2F;
+}
+
+/* TIMELINE */
+
+.timeline{
+    border-left:3px solid #A3B18A;
+    padding-left:20px;
+}
+
+.item{
+    margin-bottom:20px;
+}
+
+/* HOBI */
+
+.hobi{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.box{
+    background:#DDE8DD;
+    padding:15px;
+    border-radius:12px;
+}
+
+/* SKILL */
+
+.skill{
+    margin-bottom:20px;
+}
+
+.bar{
+    width:100%;
+    height:12px;
+    background:#ddd;
+    border-radius:20px;
+}
+
+.bar span{
+    display:block;
+    height:100%;
+    background:#556B2F;
+    border-radius:20px;
+}
+
+/* QUOTE */
+
+.quote{
+    text-align:center;
+    padding:40px;
+    color:#556B2F;
+    font-style:italic;
+}
+
+/* SOSMED */
+
+.sosmed a{
+    text-decoration:none;
+    color:white;
+    background:#556B2F;
+    padding:10px 20px;
+    border-radius:25px;
+    margin-right:10px;
+}
+
+.sosmed a:hover{
+    background:#C9A227;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+}
